@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setCentralWidget(ui->plainTextEdit);
+    ui->plainTextEdit->undo();
+    
 }
 
 MainWindow::~MainWindow()
